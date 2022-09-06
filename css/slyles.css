@@ -269,8 +269,8 @@ contacts .link:focus {
 .team {
   background-color: #f5f4fa;
 }
-.header {
-  background-color: #ffffff;
+.page-header {
+background-color: #ffffff;
 }
 .section.basics,
 .section.work {
@@ -288,6 +288,31 @@ padding-bottom: 60px;
 }
 .footer-item{
   margin-bottom: 9px;
+}
+
+
+.section.portfolio-section{
+  background-color: #F5F5F5;
+}
+.buttons.list{
+  display: flex;
+  text-align: center;
+  
+}
+
+.portfolio.list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-item{
+outline: 1px solid #EEEEEE;
+}
+
+
+
+.button:not(last-item){
+  margin-right: 8px;
 }
 
 
