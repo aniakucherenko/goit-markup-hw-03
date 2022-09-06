@@ -82,7 +82,7 @@ body {
 }
 .site-nav > .item:not(:last-child) {
   margin-right: 50px;
-}
+} 
 .contacts {
   display: flex;
   margin-left: auto;
@@ -228,6 +228,7 @@ contacts .link:focus {
   font-family: inherit;
   display: inline-block;
   cursor: pointer;
+  border-radius:4px;
 }
 .button:hover,
 .button:focus {
@@ -235,13 +236,20 @@ contacts .link:focus {
   background-color: var(--accent-color);
 }
 .portfolio-title {
+  padding: 20px 24px 4px 24px;
+  margin: 0;
+  background-color: #FFFFFF;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+  
 }
 .portfolio-text {
+  padding: 0 24px 20px 24px;
+  margin: 0;
+  background-color: #FFFFFF;
   font-size: 16px;
   line-height: 1.9;
   color: var(--main-text-color);
@@ -290,14 +298,13 @@ padding-bottom: 60px;
   margin-bottom: 9px;
 }
 
-
 .section.portfolio-section{
   background-color: #F5F5F5;
 }
 .buttons.list{
   display: flex;
-  text-align: center;
-  
+  justify-content: center;
+  margin-bottom: 56px;
 }
 
 .portfolio.list{
@@ -309,10 +316,21 @@ padding-bottom: 60px;
 outline: 1px solid #EEEEEE;
 }
 
-
-
 .button:not(last-item){
   margin-right: 8px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
