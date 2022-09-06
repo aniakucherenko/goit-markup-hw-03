@@ -254,8 +254,10 @@ contacts .link:focus {
   line-height: 1.9;
   color: var(--main-text-color);
 }
+
 .portfolio-link {
   text-decoration: none;
+  margin-bottom: 0;
 }
 .section {
   padding-top: 94px;
@@ -299,7 +301,7 @@ padding-bottom: 60px;
 }
 
 .section.portfolio-section{
-  background-color: #F5F5F5;
+  background-color: #FFFFFF;
 }
 .buttons.list{
   display: flex;
@@ -312,8 +314,9 @@ padding-bottom: 60px;
   flex-wrap: wrap;
   gap: 30px;
 }
-.portfolio-item{
-outline: 1px solid #EEEEEE;
+.portfolio-description{
+  margin-top: 0;
+  border: 1px solid #EEEEEE;
 }
 
 .button:not(last-item){
