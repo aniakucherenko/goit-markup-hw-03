@@ -37,9 +37,8 @@ body {
   align-items: center;
   height: 80px;
   margin-bottom: 0;
-  border-bottom: 1px solid #eeeeee;
 }
-.footer{
+.footer {
   display: block;
 }
 .nav {
@@ -281,6 +280,7 @@ contacts .link:focus {
 }
 .page-header {
 background-color: #ffffff;
+border-bottom: 1px solid #ECECEC;
 }
 .section.basics,
 .section.work {
@@ -315,8 +315,14 @@ padding-bottom: 60px;
   gap: 30px;
 }
 .portfolio-description{
-  margin-top: 0;
+  margin:0 auto;
   border: 1px solid #EEEEEE;
+}
+.portfolio-item .portfolio-title{
+  line-height: 2;
+}
+.portfolio-item .portfolio-text{
+  line-height: 1.9;
 }
 
 .button:not(last-item){
@@ -329,7 +335,6 @@ padding-bottom: 60px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
