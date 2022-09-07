@@ -6,12 +6,13 @@ html {
 *::after {
   box-sizing: inherit;
 }
-p, h1, h2, h3 {
+p {
   margin: 0;
 }
-ul {
+ul, li {
   margin: 0;
   padding-left: 0;
+  padding-bottom: 0;
 }
 :root {
   --primary-text-color: #ffffff;
@@ -41,7 +42,6 @@ img {
   margin: 0;
   padding: 0;
 }
-
 .header {
   display: flex;
   align-items: center;
@@ -55,7 +55,6 @@ img {
   display: flex;
   align-items: center;
 }
-
 .logo-link {
   display: block;
   color: var(--accent-color);
@@ -116,7 +115,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts .link:hover,
-contacts .link:focus {
+.contacts .link:focus {
   color: var(--accent-color);
 }
 .link.current {
@@ -133,13 +132,15 @@ contacts .link:focus {
 .footer {
   background-color: var(--primary-background-color);
 }
-.main {
+.main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--primary-background-color);
   text-align: center;
 }
 .main-title {
   width: 696px;
-  margin: 0 auto 40px;
+  margin: 0 auto 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
@@ -153,10 +154,10 @@ contacts .link:focus {
   align-items: center;
   padding: 10px 32px;
   border-radius: 4px;
+  border-style: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
@@ -191,29 +192,25 @@ contacts .link:focus {
 .img-item {
   background-color: #ffffff;
 }
-.image {
-  margin-bottom: 30px;
+.team-description {
+padding-top: 30px;
+padding-bottom: 30px;
+margin: 0;
 }
 .team-name {
   margin-top: 0;
   margin-bottom: 10px;
-}
-.team-text {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--title-text-color);
 }
+
+.list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team-text {
   font-size: 16px;
   line-height: 1.9;
@@ -244,9 +241,28 @@ contacts .link:focus {
   color: var(--primary-text-color);
   background-color: var(--accent-color);
 }
+.portfolio.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio-description {
+  padding: 20px 24px;
+  margin: 0 auto;
+  border: 1px solid #EEEEEE;
+  border-top: none;
+}
+
+.portfolio-item .portfolio-title {
+  line-height: 2;
+}
+
+.portfolio-item .portfolio-text {
+  line-height: 1.9;
+}
 .portfolio-title {
-  padding: 20px 24px 4px 24px;
-  margin: 0;
+  margin: 0 0 4px 0;
   background-color: #FFFFFF;
   font-weight: 700;
   font-size: 18px;
@@ -256,8 +272,6 @@ contacts .link:focus {
   
 }
 .portfolio-text {
-  padding: 0 24px 20px 24px;
-  margin: 0;
   background-color: #FFFFFF;
   font-size: 16px;
   line-height: 1.9;
@@ -266,7 +280,6 @@ contacts .link:focus {
 
 .portfolio-link {
   text-decoration: none;
-  margin-bottom: 0;
 }
 .section {
   padding-top: 94px;
@@ -319,21 +332,7 @@ padding-bottom: 60px;
   margin-bottom: 56px;
 }
 
-.portfolio.list{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.portfolio-description{
-  margin:0 auto;
-  border: 1px solid #EEEEEE;
-}
-.portfolio-item .portfolio-title{
-  line-height: 2;
-}
-.portfolio-item .portfolio-text{
-  line-height: 1.9;
-}
+
 
 .button:not(last-item){
   margin-right: 8px;
