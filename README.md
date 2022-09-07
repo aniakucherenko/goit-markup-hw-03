@@ -1,16 +1,18 @@
-Button{
-Cursor: pointer;
-}
-A{
-Color: inherit;
+button{
+cursor: pointer;
 }
 
-Adress{
-Font-style: normal;
+a{
+color: inherit;
+}
+
+adress{
+font-style: normal;
 }
 
 .list{
 List-style: none;
 }
+
 .link{
 Text-decoration: none}

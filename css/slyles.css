@@ -138,8 +138,8 @@ contacts .link:focus {
   text-align: center;
 }
 .main-title {
-  margin-top: 0;
-  margin-bottom: 40px;
+  width: 696px;
+  margin: 0 auto 40px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
