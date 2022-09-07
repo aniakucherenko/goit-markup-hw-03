@@ -6,13 +6,18 @@ a{
 color: inherit;
 }
 
-adress{
+}
+a{
+color: inherit;
+}
+
+address{
 font-style: normal;
 }
 
 .list{
-List-style: none;
+list-style: none;
 }
 
 .link{
-Text-decoration: none}
+text-decoration: none}
